@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # Copy the HTML file
-COPY cleannshine.html /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
 
 # Copy the CSS file
 COPY cleannshine.css /usr/share/nginx/html/cleannshine.css
