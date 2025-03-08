@@ -64,10 +64,11 @@
         <div class="service-item">
             <h3>Exterior Valet</h3>
             <ul>
-                <li>Hand wash, wax, and dry</li>
+                <li>Hand wash</li>
+                <li>Wax and dry</li>
                 <li>Wheels cleaned</li>
                 <li>Door shuts cleaned</li>
-                <li>Windows polished (outside)</li>
+                <li>Exterior windows polished</li>
                 <li>Tyre shine applied</li>
             </ul>
             <p class="price">Cars: £20</p>
@@ -77,12 +78,12 @@
         <div class="service-item">
             <h3>Mini Valet</h3>
             <ul>
-                <li>Hand wash, wax, and dry</li>
+                <li>Hand wash, wax and dry</li>
                 <li>Wheels cleaned</li>
-                <li>Vacuum (including boot)</li>
-                <li>Windows polished (inside & outside)</li>
+                <li>Vacuum including boot</li>
+                <li>Windows polished inside and out</li>
                 <li>Door shuts cleaned</li>
-                <li>Dashboard cleaned & polished</li>
+                <li>Dashboard cleaned and polished</li>
                 <li>Tyre shine applied</li>
             </ul>
             <p class="price">Cars: £40</p>
@@ -92,11 +93,11 @@
         <div class="service-item">
             <h3>Super Mini Valet</h3>
             <ul>
-                <li>Hand wash, Autoglym wax & dry</li>
+                <li>Hand wash, Autoglym wax, and dry</li>
                 <li>Wheels cleaned</li>
-                <li>Plastic (interior & exterior) polished</li>
+                <li>Plastic trim polished inside and out</li>
                 <li>Door shuts cleaned</li>
-                <li>Windows polished (inside & outside)</li>
+                <li>Windows polished inside and out</li>
                 <li>Bumpers polished</li>
                 <li>Tyre shine applied</li>
             </ul>
@@ -107,15 +108,15 @@
         <div class="service-item">
             <h3>Full Wax & Polish</h3>
             <ul>
-                <li>Hand wash, Autoglym wax & dry</li>
+                <li>Hand wash, Autoglym wax, and dry</li>
                 <li>Wheels cleaned</li>
                 <li>Door shuts cleaned</li>
-                <li>Windows polished (inside & outside)</li>
-                <li>Vacuum (including boot)</li>
-                <li>Seats wiped & polished</li>
-                <li>Dashboard cleaned & polished</li>
-                <li>Plastic (interior & exterior) polished</li>
-                <li>Full hand wax polish (interior & exterior)</li>
+                <li>Windows polished inside and out</li>
+                <li>Vacuum including boot</li>
+                <li>Seats wiped and polished</li>
+                <li>Dashboard cleaned and polished</li>
+                <li>Plastic trim polished inside and out</li>
+                <li>Full hand wax polish applied inside and out</li>
             </ul>
             <p class="price">Cars: £50</p>
             <p class="price">MPV: £60</p>
@@ -124,16 +125,16 @@
         <div class="service-item">
             <h3>Interior Valet</h3>
             <ul>
-                <li>Seats washed & dried</li>
-                <li>Stains removed</li>
-                <li>Windows polished (inside)</li>
-                <li>Vacuum (including boot)</li>
-                <li>Seats wiped & polished</li>
-                <li>Dashboard cleaned & polished</li>
-                <li>Plastic (interior) polished</li>
+                <li>Seats washed and dried</li>
+                <li>Stain removal</li>
+                <li>Windows polished inside</li>
+                <li>Vacuum including boot</li>
+                <li>Seats wiped and polished</li>
+                <li>Dashboard cleaned and polished</li>
+                <li>Plastic trim polished inside</li>
                 <li>Full interior polish</li>
-                <li>Roof lining washed & dried</li>
-                <li>Boot washed & dried</li>
+                <li>Roof lining washed and dried</li>
+                <li>Boot washed and dried</li>
             </ul>
             <p class="price">Cars: £100</p>
             <p class="price">MPV: £110</p>
@@ -142,24 +143,62 @@
         <div class="service-item">
             <h3>Full Valet</h3>
             <ul>
-                <li>Hand wash, Autoglym wax & dry</li>
+                <li>Hand wash, Autoglym wax, and dry</li>
                 <li>Wheels cleaned</li>
                 <li>Door shuts cleaned</li>
-                <li>Windows polished (inside & outside)</li>
-                <li>Vacuum (including boot)</li>
-                <li>Seats wiped & polished</li>
-                <li>Dashboard cleaned & polished</li>
-                <li>Plastic (interior & exterior) polished</li>
+                <li>Windows polished inside and out</li>
+                <li>Vacuum including boot</li>
+                <li>Seats wiped and polished</li>
+                <li>Dashboard cleaned and polished</li>
+                <li>Plastic trim polished inside and out</li>
                 <li>Tyre shine applied</li>
-                <li>Full hand wax polish (interior & exterior)</li>
-                <li>Seats washed & stains removed</li>
-                <li>Roof lining & roof washed</li>
+                <li>Full hand wax polish applied inside and out</li>
+                <li>Seats washed and stains removed</li>
+                <li>Roof lining washed</li>
+                <li>Roof washed</li>
             </ul>
             <p class="price">From £140</p>
             <button class="book-this" onclick="bookService('Full Valet')">Book This</button>
         </div>
     </div>
 </section>
+
+<style>
+    .services {
+        padding: 20px;
+    }
+    .service-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .service-item {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+    }
+    .service-item ul {
+        padding-left: 20px;
+    }
+    .service-item ul li {
+        margin-bottom: 5px;
+    }
+    .book-this {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .book-this:hover {
+        background: #0056b3;
+    }
+</style>
+
 
 
 
