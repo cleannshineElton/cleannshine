@@ -205,30 +205,48 @@
     </div>
 
     <div id="bookingForm" class="modal">
-        <div class="form-container">
-            <span class="close-btn" onclick="closeForm()">&times;</span>
-            <h2>Book Now</h2>
-            <form id="bookingForm" onsubmit="submitForm(event)">
-                <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
-                
-                <label for="phone"><b>Phone Number</b></label>
-                <input type="tel" placeholder="Enter Phone Number" name="phone" required>
-                
-                <label for="address"><b>Address</b></label>
-                <input type="text" placeholder="Enter Address" name="address" required>
-    
-                <label for="message"><b>Message: </b></label>
-                <!-- Replace the input with a textarea -->
-                <textarea placeholder="Enter a message:" name="message" rows="4" required></textarea>
-                
-                <label for="service"><b>Service</b></label>
-                <input type="text" id="service" name="service" readonly required>
-                
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </div>
+    <div class="form-container">
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+        <h2>Book Now</h2>
+        <form id="bookingForm" onsubmit="submitForm(event)">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+            <label for="address"><b>Address</b></label>
+            <div class="address-container">
+                <input type="text" placeholder="House Number" name="house-number" required>
+                <input type="text" placeholder="Street Address" name="street-address" required>
+                <input type="text" placeholder="Post Code" name="postcode" required>
+            </div>
+
+            <label for="message"><b>Message:</b></label>
+            <textarea placeholder="Enter a message:" name="message" rows="4" required></textarea>
+
+            <label for="service"><b>Service</b></label>
+            <input type="text" id="service" name="service" readonly required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
     </div>
+</div>
+
+<style>
+    .address-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .address-container input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+
 
     <div id="confirmationModal" class="modal">
         <div class="confirmation-container">
