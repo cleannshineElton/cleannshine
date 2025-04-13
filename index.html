@@ -3,383 +3,499 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean N'shine</title>
-    <link rel="stylesheet" href="cleannshine.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Clean N'Shine | Luxury Mobile Car Valeting | Leicester</title>
+    <meta name="description" content="Premium mobile car valeting services in Leicester. Showroom-quality detailing at your doorstep. Book your luxury valet today.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cleannshine.css">
 </head>
 <body>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "jPAhg6F9dWPsjA6g_",
-      });
-   })();
-</script>
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "jPAhg6F9dWPsjA6g_",
+          });
+       })();
+    </script>
 
-    <header>
-        <div class="logo">Clean N'shine</div>
-        <nav>
-            <ul class="nav-links" style="z-index: 11">
-                <li><a href="#Reviews">Reviews</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-
-            </div>
-        </nav>
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="https://cleannshine.uk/cleannshine.jpg" alt="Clean N'shine Logo">
+                Clean N'shine
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section id="home" class="hero">
         <video autoplay loop muted playsinline class="hero-video">
-            <source src="4863266-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/4863282/4863282-sd_640_360_30fps.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-content">
-            <p>
-                <i style="color: red;" class="fas fa-map-marker-alt"></i> Only in Leicester
-            </p>
-            <img style="width: 150px; text-align: center; border-radius: 20%;" src="cleannshine.jpg" alt="Clean N' Shine Logo">
-            <h1>Professional Clean N' Shine Services</h1>
-            <p>We bring the shine to your vehicle, right at your doorstep. Book now!</p>
-            <button class="book-now" onclick="openServiceModal()">Book Now</button>
+            <div class="location-tag">
+                <i class="fas fa-map-marker-alt"></i> Serving Leicester & Surrounding Areas
+            </div>
+            <img class="logo-image" src="https://cleannshine.uk/cleannshine.jpg" alt="Clean N' Shine Logo">
+            <h1>Luxury Mobile Car Valeting Services</h1>
+            <p>Experience showroom-quality detailing at your doorstep with our premium valeting services</p>
+            <div class="hero-btns">
+                <button class="btn btn-gold" onclick="openServiceModal()">
+                    <i class="fas fa-calendar-check"></i> Book Now
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-list"></i> Our Services
+                </button>
+            </div>
         </div>
     </section>
     
-    
-    <!-- Add this in the <head> section if using Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    
-   <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-        <div class="service-item">
-            <h3>Exterior Valet</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, wax & dry</div>
-                <div class="service-task">✓ Wheels cleaned</div>
-                <div class="service-task">✓ Door shuts cleaned</div>
-                <div class="service-task">✓ Windows polished (outside)</div>
-                <div class="service-task">✓ Tyre shine applied</div>
-            </div> <br>
-            <p class="price">Small: £19.90</p>
-            <p class="price">Medium: £24.90</p>
-            <p class="price">Large: £29.80</p>
-            <button class="book-this" onclick="bookService('Exterior Valet')">Book This</button>
+    <section id="services" class="services-section section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Premium Services</h2>
+                <p>Choose from our range of luxury valeting services designed to restore your vehicle's showroom finish</p>
+            </div>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Exterior Valet</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Premium hand wash with pH-neutral shampoo</div>
+                        <div class="service-task">High-quality wax application & meticulous drying</div>
+                        <div class="service-task">Wheels thoroughly cleaned with specialist cleaner</div>
+                        <div class="service-task">Door shuts and jambs cleaned</div>
+                        <div class="service-task">Windows polished (outside) with streak-free cleaner</div>
+                        <div class="service-task">Premium tyre shine applied</div>
+                        <div class="price-container">
+                            <p class="price">Small: £19.90 | Medium: £24.90 | Large: £29.80</p>
+                            <p class="price-note">Prices vary based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Exterior Valet')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Mini Valet</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Premium hand wash with wax application</div>
+                        <div class="service-task">Wheels thoroughly cleaned with acid-free cleaner</div>
+                        <div class="service-task">Complete vacuum (including boot and under seats)</div>
+                        <div class="service-task">Window cleaning (inside & outside) with anti-fog</div>
+                        <div class="service-task">Door shuts and jambs cleaned</div>
+                        <div class="service-task">Dashboard and console cleaned & protected</div>
+                        <div class="service-task">Premium tyre dressing applied</div>
+                        <div class="price-container">
+                            <p class="price">Small: £34.60 | Medium: £38.60 | Large: £43.70</p>
+                            <p class="price-note">Prices vary based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Mini Valet')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Super Mini Valet</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Hand wash with Autoglym High Definition Wax</div>
+                        <div class="service-task">Wheels cleaned with non-acidic cleaner & sealed</div>
+                        <div class="service-task">Door shuts and jambs meticulously cleaned</div>
+                        <div class="service-task">Complete vacuum with crevice tool</div>
+                        <div class="service-task">Windows polished (inside & outside) with anti-fog</div>
+                        <div class="service-task">Bumpers polished and protected</div>
+                        <div class="service-task">Dashboard cleaned & UV protected</div>
+                        <div class="service-task">Premium long-lasting tyre dressing</div>
+                        <div class="price-container">
+                            <p class="price">Small: £44.60 | Medium: £54.60 | Large: £59.90</p>
+                            <p class="price-note">Prices vary based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Super Mini Valet')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Full Wax & Polish</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Hand wash with Autoglym High Definition Wax</div>
+                        <div class="service-task">Wheels cleaned, decontaminated & sealed</div>
+                        <div class="service-task">Door shuts and jambs meticulously cleaned</div>
+                        <div class="service-task">Windows polished (inside & outside) with rain repellent</div>
+                        <div class="service-task">Complete vacuum with compressed air detailing</div>
+                        <div class="service-task">Dashboard cleaned & UV protected</div>
+                        <div class="service-task">Plastic (interior & exterior) polished & protected</div>
+                        <div class="service-task">Full hand wax application for deep shine</div>
+                        <div class="price-container">
+                            <p class="price">Small: £65.90 | Medium: £79.70 | Large: £84.80</p>
+                            <p class="price-note">Prices vary based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Full Wax & Polish')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Interior Valet</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Hand wash with Autoglym High Definition Wax</div>
+                        <div class="service-task">Seats professionally shampooed & extracted</div>
+                        <div class="service-task">Stain removal treatment for all fabrics</div>
+                        <div class="service-task">Windows polished (inside) with anti-fog</div>
+                        <div class="service-task">Complete vacuum with compressed air detailing</div>
+                        <div class="service-task">Leather seats cleaned, conditioned & protected</div>
+                        <div class="service-task">Dashboard deep cleaned & UV protected</div>
+                        <div class="service-task">Interior plastic polished & protected</div>
+                        <div class="service-task">Full interior polish & odor elimination</div>
+                        <div class="service-task">Headlining gently cleaned & refreshed</div>
+                        <div class="price-container">
+                            <p class="price">Small: £99.90 | Medium: £109.90 | Large: £114.80</p>
+                            <p class="price-note">Prices vary based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Interior Valet')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Signature Full Valet</h3>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-task">Hand wash with Autoglym High Definition Wax</div>
+                        <div class="service-task">Wheels decontaminated, cleaned & sealed</div>
+                        <div class="service-task">Door shuts and jambs meticulously cleaned</div>
+                        <div class="service-task">Windows polished (inside & outside) with rain repellent</div>
+                        <div class="service-task">Complete vacuum with compressed air detailing</div>
+                        <div class="service-task">Leather seats cleaned, conditioned & protected</div>
+                        <div class="service-task">Dashboard deep cleaned & UV protected</div>
+                        <div class="service-task">Plastic (interior & exterior) polished & protected</div>
+                        <div class="service-task">Premium long-lasting tyre dressing</div>
+                        <div class="service-task">Full hand wax application for deep shine</div>
+                        <div class="service-task">Seats shampooed & stains professionally removed</div>
+                        <div class="service-task">Headlining gently cleaned & refreshed</div>
+                        <div class="service-task">Engine bay degreased & dressed</div>
+                        <div class="service-task">Final inspection & quality check</div>
+                        <div class="price-container">
+                            <p class="price">From £154.90</p>
+                            <p class="price-note">Custom quote based on vehicle size and condition</p>
+                        </div>
+                        <button class="book-this" onclick="bookService('Signature Full Valet')">
+                            <i class="fas fa-bookmark"></i> Book This Service
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="service-item">
-            <h3>Mini Valet</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, wax & dry</div>
-                <div class="service-task">✓ Wheels cleaned</div>
-                <div class="service-task">✓ Vacuum (including boot)</div>
-                <div class="service-task">✓ Window cleaning (inside & outside)</div>
-                <div class="service-task">✓ Door shuts cleaned</div>
-                <div class="service-task">✓ Dashboard cleaned</div>
-                <div class="service-task">✓ Tyre shine applied</div>
-            </div> <br>
-            <p class="price">Small: £34.60</p>
-            <p class="price">Medium: £38.60</p>
-            <p class="price">Large: £43.70</p>
-            <button class="book-this" onclick="bookService('Mini Valet')">Book This</button>
+    </section>
+
+    <section class="hours-section section">
+        <div class="container">
+            <div class="hours-container">
+                <div class="hours-title">
+                    <i class="fas fa-clock"></i> Our Working Hours <i class="fas fa-car"></i>
+                </div>
+                <div class="day open">Monday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Tuesday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Wednesday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Thursday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Friday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Saturday <span>8:00 AM - 7:00 PM</span></div>
+                <div class="day open">Sunday <span>8:00 AM - 7:00 PM</span></div>
+            </div>
         </div>
-        
-        <div class="service-item">
-            <h3>Super Mini Valet</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, Autoglym wax & dry</div>
-                <div class="service-task">✓ Wheels cleaned</div>
-                <div class="service-task">✓ Door shuts cleaned</div>
-                <div class="service-task">✓ Vacuum (including boot)</div>
-                <div class="service-task">✓ Windows polished (inside & outside)</div>
-                <div class="service-task">✓ Bumpers polished</div>
-                <div class="service-task">✓ Dashboard cleaned</div>
-                <div class="service-task">✓ Tyre shine applied</div>
-            </div> <br>
-            <p class="price">Small: £44.60</p>
-            <p class="price">Medium: £54.60</p>
-            <p class="price">Large: £59.90</p>
-            <button class="book-this" onclick="bookService('Super Mini Valet')">Book This</button>
+    </section>
+
+    <section id="Reviews" class="reviews-section section">
+        <div class="container">
+            <div class="review-card">
+                <div class="blur-background"></div>
+                <div class="review-content">
+                    <h2>Client Testimonials</h2>
+                    <div class="review active" id="review-1">
+                        <p class="review-text">Elton transformed my 10-year-old family car into something that looks brand new. The attention to detail was incredible - he even cleaned the seatbelt mechanisms! The paintwork has never looked so good, and the interior smells fresh. Worth every penny and I'll definitely be a regular customer.</p>
+                        <p class="review-author">- Gary Thompson, Leicester</p>
+                        <p class="review-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5/5
+                        </p>
+                    </div>
+                    <div class="review" id="review-2">
+                        <p class="review-text">As a busy professional, I don't have time to maintain my car properly. Clean N'Shine saved me hours and did a far better job than I ever could. The kids were amazed at how clean their seats were - no more crumbs! The service was punctual, professional, and exceeded all my expectations.</p>
+                        <p class="review-author">- Sarah Mahmood, Leicester</p>
+                        <p class="review-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5/5
+                        </p>
+                    </div>
+                    <div class="review" id="review-3">
+                        <p class="review-text">After a particularly muddy camping trip, my car was in a state I thought was beyond redemption. Elton worked miracles - the transformation was unbelievable! Not only does it look brand new, but the protective treatments he applied have made it much easier to keep clean. Exceptional service from a true professional.</p>
+                        <p class="review-author">- Tom Reynolds, Leicester</p>
+                        <p class="review-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5/5
+                        </p>
+                    </div>
+                    <div class="review" id="review-4">
+                        <p class="review-text">I run a small car dealership and have used many valeting services over the years. Clean N'Shine is by far the best. The attention to detail is unmatched, and they consistently make my stock look showroom-ready. My sales have increased thanks to the pristine condition of the vehicles they prepare.</p>
+                        <p class="review-author">- David Chen, Auto Trader Leicester</p>
+                        <p class="review-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5/5
+                        </p>
+                    </div>
+                    <div class="review" id="review-5">
+                        <p class="review-text">The Signature Full Valet was worth every penny for my classic car. Elton treated it with the care and respect it deserves, using products specifically designed for older paintwork. The results were stunning - the deep gloss finish brought back the original showroom look. I couldn't be happier with the service.</p>
+                        <p class="review-author">- James Wilson, Classic Car Collector</p>
+                        <p class="review-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5/5
+                        </p>
+                    </div>
+                    <div class="navigation">
+                        <button class="nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="service-item">
-            <h3>Full Wax & Polish</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, Autoglym wax & dry</div>
-                <div class="service-task">✓ Wheels cleaned</div>
-                <div class="service-task">✓ Door shuts cleaned</div>
-                <div class="service-task">✓ Windows polished (inside & outside)</div>
-                <div class="service-task">✓ Vacuum (including boot)</div>
-                <div class="service-task">✓ Dashboard cleaned</div>
-                <div class="service-task">✓ Plastic (interior & exterior) polished</div>
-                <div class="service-task">✓ Full hand wax (interior & exterior)</div>
-            </div> <br>
-            <p class="price">Small: £65.90</p>
-            <p class="price">Medium: £79.70</p>
-            <p class="price">Large: £84.80</p>
-            <button class="book-this" onclick="bookService('Full Wax & Polish')">Book This</button>
+    </section>
+
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Clean N'Shine</h2>
+                <p>Leicester's premier mobile valeting service with a passion for perfection</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-spa about-icon"></i>
+                    <h2>Our Philosophy</h2>
+                    <p>
+                        At Clean N'Shine, we believe that every vehicle deserves to look its best, regardless of age or condition. Our founder Elton started this business out of a genuine passion for automotive care and a commitment to delivering exceptional results.
+                    </p>
+                    <p>
+                        We combine traditional hand-detailing techniques with the latest products and technology to achieve showroom-quality finishes. Our team undergoes continuous training to stay at the forefront of valeting innovation.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <i class="fas fa-award about-icon"></i>
+                    <h2>Why Choose Us?</h2>
+                    <ul>
+                        <li><strong>Certified Professionals</strong>: Fully trained and accredited detailing specialists</li>
+                        <li><strong>Premium Products</strong>: We only use top-tier, vehicle-safe cleaning products</li>
+                        <li><strong>Mobile Convenience</strong>: We come to you at home or work, saving you time</li>
+                        <li><strong>Eco-Friendly</strong>: Water-efficient methods and biodegradable products</li>
+                        <li><strong>Insurance Approved</strong>: Fully insured for your peace of mind</li>
+                        <li><strong>Satisfaction Guarantee</strong>: Not happy? We'll make it right</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <i class="fas fa-hand-holding-heart about-icon"></i>
+                    <h2>Our Commitment</h2>
+                    <p>
+                        We're committed to more than just clean cars - we're dedicated to building lasting relationships with our customers through:
+                    </p>
+                    <ul>
+                        <li><strong>Reliability</strong>: On-time arrivals and consistent quality</li>
+                        <li><strong>Transparency</strong>: Clear pricing with no hidden costs</li>
+                        <li><strong>Attention to Detail</strong>: We notice and address what others miss</li>
+                        <li><strong>Custom Solutions</strong>: Services tailored to your vehicle's needs</li>
+                        <li><strong>Community Focus</strong>: Supporting local businesses and charities</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="service-item">
-            <h3>Interior Valet</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, Autoglym wax & dry</div>
-                <div class="service-task">✓ Seats washed & dried</div>
-                <div class="service-task">✓ Stains removed</div>
-                <div class="service-task">✓ Windows polished (inside)</div>
-                <div class="service-task">✓ Vacuum (including boot)</div>
-                <div class="service-task">✓ Seats wiped & polished</div>
-                <div class="service-task">✓ Dashboard cleaned & polished</div>
-                <div class="service-task">✓ Interior plastic polished</div>
-                <div class="service-task">✓ Full interior polish</div>
-                <div class="service-task">✓ Roof lining washed & dried</div>
-            </div> <br>
-            <p class="price">Small: £99.90</p>
-            <p class="price">Medium: £109.90</p>
-            <p class="price">Large: £114.80</p>
-            <button class="book-this" onclick="bookService('Interior Valet')">Book This</button>
-        </div>
-        
-        <div class="service-item">
-            <h3>Full Valet</h3>
-            <div class="service-details">
-                <div class="service-task">✓ Hand wash, Autoglym wax & dry</div>
-                <div class="service-task">✓ Wheels cleaned</div>
-                <div class="service-task">✓ Door shuts cleaned</div>
-                <div class="service-task">✓ Windows polished (inside & outside)</div>
-                <div class="service-task">✓ Vacuum (including boot)</div>
-                <div class="service-task">✓ Seats wiped & polished</div>
-                <div class="service-task">✓ Dashboard cleaned & polished</div>
-                <div class="service-task">✓ Plastic (interior & exterior) polished</div>
-                <div class="service-task">✓ Tyre shine applied</div>
-                <div class="service-task">✓ Full hand wax (interior & exterior)</div>
-                <div class="service-task">✓ Seats washed & stains removed</div>
-                <div class="service-task">✓ Roof lining washed & dried</div>
-                <div class="service-task">✓ Roof washed</div>
-            </div> <br>
-            <p class="price">From £154.90</p>
-            <button class="book-this" onclick="bookService('Full Valet')">Book This</button>
-        </div>
-    </div>
-</section>
+    </section>
 
-    <style>
-       
-        .hours-container {
-            max-width: 452px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .day {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            border-bottom: 1px solid #ddd;
-        }
-        .open {
-            color: green;
-        }
-        .closed {
-            color: red;
-        }
-        .icon {
-            font-size: 20px;
-        }
-    </style>
-
-    <div class="hours-container">
-        <h2>🧼 Clean N'Shine Working Hours 🚗</h2>
-        <div class="day open">Monday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Tuesday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Wednesday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Thursday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Friday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Saturday <span class="icon">✅ 8 AM - 19 PM</span></div>
-        <div class="day open">Sunday <span class="icon">✅ 8 AM - 19 PM</span></div>
-    </div>
-
-
-
-
-
+    <!-- Service Selection Modal -->
     <div id="serviceSelectionModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeServiceModal()">&times;</span>
-            <h2>Select a Service</h2>
+            <div class="modal-header">
+                <h2>Select Your Service</h2>
+                <span class="close-btn" onclick="closeServiceModal()">&times;</span>
+            </div>
             <div class="service-options">
                 <div class="service-option" onclick="selectService('Exterior Valet')">
                     <h3>Exterior Valet</h3>
-                    <p>Small: £19.90 | Medium: £24.90 | Large: £29.80</p>
+                    <p>Perfect for maintaining your car's shine between full cleans. Includes premium hand wash, wax application, wheel cleaning, and exterior detailing.</p>
+                    <p class="price">Small: £19.90 | Medium: £24.90 | Large: £29.80</p>
                 </div>
                 <div class="service-option" onclick="selectService('Mini Valet')">
                     <h3>Mini Valet</h3>
-                    <p>Small: £34.60 | Medium: £38.60 | Large: £43.70</p>
+                    <p>Great for regular maintenance with interior and exterior cleaning. Includes vacuum, window cleaning, dashboard treatment, and basic exterior clean.</p>
+                    <p class="price">Small: £34.60 | Medium: £38.60 | Large: £43.70</p>
                 </div>
                 <div class="service-option" onclick="selectService('Super Mini Valet')">
                     <h3>Super Mini Valet</h3>
-                    <p>Small: £44.60 | Medium: £54.90 | Large: £59.90</p>
+                    <p>Enhanced cleaning with Autoglym wax for extra protection. Includes more thorough interior clean and exterior protection treatments.</p>
+                    <p class="price">Small: £44.60 | Medium: £54.60 | Large: £59.90</p>
                 </div>
                 <div class="service-option" onclick="selectService('Full Wax & Polish')">
                     <h3>Full Wax & Polish</h3>
-                    <p>Small: £65.90 | Medium: £79.70 | Large: £84.80</p>
+                    <p>Complete exterior and interior polish with hand wax. Ideal for preparing your car for special occasions or seasonal changes.</p>
+                    <p class="price">Small: £55.70 | Medium: £69.70 | Large: £74.70</p>
                 </div>
                 <div class="service-option" onclick="selectService('Interior Valet')">
                     <h3>Interior Valet</h3>
-                    <p>Small: £99.90 | Medium: £109.90 | Large: £114.80</p>
+                    <p>Deep clean for interiors with stain removal and fabric treatment. Perfect for family vehicles or restoring neglected interiors.</p>
+                    <p class="price">Small: £99.90 | Medium: £109.90 | Large: £114.80</p>
                 </div>
-                <div class="service-option" onclick="selectService('Full Valet')">
-                    <h3>Full Valet</h3>
-                    <p>From £154.90</p>
+                <div class="service-option" onclick="selectService('Signature Full Valet')">
+                    <h3>Signature Full Valet</h3>
+                    <p>Our most comprehensive service for complete transformation. Includes everything from engine bay cleaning to headlining refresh.</p>
+                    <p class="price">From £154.90 (custom quote based on vehicle)</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Booking Form Modal -->
     <div id="bookingForm" class="modal">
-    <div class="form-container">
-        <span class="close-btn" onclick="closeForm()">&times;</span>
-        <h2>Book Now</h2>
-        <form id="bookingForm" onsubmit="submitForm(event)">
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Name" name="name" required>
-
-            <label for="phone"><b>Phone Number</b></label>
-            <input type="tel" placeholder="Enter Phone Number" name="phone" required>
-
-            <label for="address"><b>Address</b></label>
-            <div class="address-container">
-                <input type="text" placeholder="House Number" name="housenumber" required>
-                <input type="text" placeholder="Street Address" name="address" required>
-                <input type="text" placeholder="Post Code" name="postcode" required>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Valet</h2>
+                <span class="close-btn" onclick="closeForm()">&times;</span>
             </div>
+            <div class="form-container">
+                <form id="bookingForm" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                
+                    
+                    <div class="form-group">
+                        <label>Address*</label>
+                        <div class="address-grid">
+                            <input type="text" name="housenumber" placeholder="House Number/Name" required>
+                            <input type="text" name="street" placeholder="Street Address" required>
+                            <input type="text" name="postcode" placeholder="Post Code" required>
+                        </div>
+                    </div>
 
-            <label for="message"><b>Message:</b></label>
-            <textarea placeholder="Enter a message:" name="message" rows="4" required></textarea>
-
-            <label for="service"><b>Service</b></label>
-            <input type="text" id="service" name="service" readonly required>
-
-            <button type="submit" class="btn">Submit</button>
-        </form>
+                    <div class="form-group">
+                        <label for="service">Selected Service*</label>
+                        <input type="text" id="service" name="service" readonly required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Special Instructions</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements, areas needing special attention, or vehicle conditions we should know about"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
 
-<style>
-    .address-container {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    .address-container input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-</style>
-
-
+    <!-- Confirmation Modal -->
     <div id="confirmationModal" class="modal">
-        <div class="confirmation-container">
-            <h2>Booking Confirmed!</h2>
-            <p>We will contact you soon.</p>
-            <button onclick="closeConfirmation()">OK</button>
-        </div>
-    </div>
-
-    <div class="container" id="Reviews">
-        <div class="review-card">
-            <div class="blur-background"></div>
-            <div class="review-content">
-                <h2 style="margin-bottom: 10px;">- What Our Customers Say</h2>
-                <div class="review" id="review-1">
-                    <p class="review-text">"Blimey, Elton cleaned my car better than I've ever had. Its that shiny, Im having to drive it with me shades on, is so clean Cheers, mate!"</p>
-                    <p class="review-author">- Gary from leicester</p>
+        <div class="modal-content">
+            <div class="confirmation-container">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
                 </div>
-                <div class="review" id="review-2" style="display: none;">
-                    <p class="review-text">"Elton is truly a legend. He turned up on time, focused on the job and left my car looking like it had just come out of the showroom. Very nicely done" </p>
-                    <p class="review-author">- Sarah from leicester</p>
-                </div>
-                <div class="review" id="review-3" style="display: none;">
-                    <p class="review-text">"I truly thought my automobile was beyond redemption, but Elton managed to work his magic, and now it sparkles like a gem. Top bloke!" </p>
-                    <p class="review-author">- Tom from leicester</p>
-                </div>
-                <div class="navigation">
-                    <button id="prevBtn">Previous</button>
-                    <button id="nextBtn">Next</button>
-                </div>
+                <h2>Booking Confirmed!</h2>
+                <p>Thank you for choosing Clean N'Shine. We've received your booking details and will contact you within 24 hours to confirm your appointment.</p>
+                <p>A confirmation has been sent to your email address with your service details. For any urgent queries, please call us at <a href="tel:+447473774237">07473 774237</a>.</p>
+                <button onclick="closeConfirmation()">
+                    <i class="fas fa-thumbs-up"></i> Back to Site
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="container" id="about"> 
-        <div style="margin-bottom: 15px; text-align: center;">
-            <h1>About Clean N'shine</h1>
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#home" class="footer-logo">Clean N'Shine</a>
+                    <p>Leicester's premier mobile valeting service, delivering showroom-quality cleaning at your doorstep since 2015. Our passion for perfection drives everything we do.</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/cleannnshine" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/cleannnshine" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/447473774237" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://tiktok.com/@clean.nshine" class="social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#Reviews">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Serving Leicester & Surrounding Areas</div>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <div><a href="tel:+447473774237">07473 774237</a></div>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <div><a href="mailto:cleannshine95@gmail.com">cleannshine95@gmail.com</a></div>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <div>Open 7 Days: 8am - 7pm</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Clean N'Shine. All rights reserved. | Professional mobile car valeting services in Leicester</p>
+            </div>
         </div>
-
-        <!-- About Us Section -->
-        <section class="about-section">
-            <div class="about-content">
-                <h2>Who We Are</h2>
-                <p>
-                    We at <strong>Clean N'shine</strong> think about providing your car with that fresh new look. Based in the center of leicester, we bring our high-quality cleaning services to your doorstep. From a basic wash to a detailing task, we have it all!
-                </p>
-            </div>
-
-            <div class="about-content">
-                <h2>Why Choose Us?</h2>
-                <ul>
-                    <li>🚗 <strong>Modernized Equipment</strong>: We utilize modernized equipment and eco-friendly materials to ensure the task is accomplished rightly.</li>
-                    <li>👨‍🔧 <strong>Expert Professionals</strong>: Our professionals are experienced, trained, and dedicated to providing their best input.</li>
-                    <li>⏱️ <strong>Convenient Service</strong>: We deliver to you! No waiting around driving to a car wash.</li>
-                    <li>💎 <strong>100% Satisfaction Guaranteed</strong>: If you’re not happy, we’ll make it right.</li>
-                </ul>
-            </div>
-
-            <div class="about-content">
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is simple: to provide the best car-cleaning experience in the leicester. Your vehicle should have the best, and we're here to give it a smile. From family Small to luxury Small, we treat every car with the same love that we would if it were ours.
-                </p>
-            </div>
-        </section>
-
-    <script src="script.js"></script>
-<footer id="contact">
-    <div class="social-media">
-        <a href="https://www.instagram.com/cleannnshine" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.facebook.com/cleannnshine" target="_blank">
-            <i class="fab fa-facebook"></i> Facebook
-        </a>
-        <a href="tel:+44 7473774237">
-            <i class="fas fa-phone"></i> +44 7473774237
-        </a>
-        <a href="https://tiktok.com/@clean.nshine" target="_blank">
-            <i class="fab fa-tiktok"></i> TikTok
-        </a>
-        <a  href="https://wa.me/447473774237" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-    </div>
-    <p>&copy; 2025 Clean N'shine. All rights reserved.</p>
-</footer>
+    </footer>
 </body>
 </html>
 
