@@ -179,11 +179,12 @@
         }
 
         .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
+    position: relative; /* Crucial for mobile menu positioning */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
         .logo {
             display: flex;
             align-items: center;
@@ -1229,28 +1230,29 @@
         @media (max-width: 768px) {
              .nav-links {
         position: fixed;
-        top: 80px;
+        top: 80px; /* Match your header height */
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
-        background-color: white;
+        height: calc(100vh - 80px); /* Full viewport minus header */
+        background: white;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 30px;
-        transition: all 0.5s ease; /* More specific transition */
-        z-index: 1000;
-        opacity: 0; /* Start invisible */
+        gap: 2rem;
+        transition: all 0.5s ease;
+        z-index: 999;
+        padding: 2rem 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     }
 
     .nav-links.active {
         left: 0;
-        opacity: 1; /* Fade in */
     }
 
     .hamburger {
         display: block;
-        position: relative; /* Ensure proper stacking */
+        z-index: 1000; /* Above the menu */
+        position: relative;
     }
 
             .hero-content h1 {
