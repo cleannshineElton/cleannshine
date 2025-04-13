@@ -336,7 +336,6 @@
             justify-content: center;
             gap: 20px;
             animation: fadeInUp 1s ease 0.4s forwards;
-            opacity: 0;
         }
 
         /* Services Section */
